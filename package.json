@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/ui": "^2.12.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@unocss/nuxt": "^0.58.3",
@@ -22,7 +23,10 @@
   "eslintConfig": {
     "extends": [
       "@nuxtjs/eslint-config-typescript"
-    ]
+    ],
+    "rules": {
+      "vue/no-multiple-template-root": "off"
+    }
   },
   "prettier": {
     "printWidth": 120,
