@@ -17,6 +17,7 @@
     "eslint": "^8.56.0",
     "nuxt": "^3.9.0",
     "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "vue": "^3.4.5",
     "vue-router": "^4.2.5"
   },
@@ -34,6 +35,9 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true,
-    "trailingComma": "none"
+    "trailingComma": "none",
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }
