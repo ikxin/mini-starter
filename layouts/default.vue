@@ -41,10 +41,10 @@ const currentYear = ref(dayjs().year())
       </div>
     </div>
   </header>
-  <section class="min-h-[calc(100vh-4rem)]">
+  <section class="mx-auto min-h-[calc(100vh-4rem)] max-w-6xl p-4">
     <slot />
   </section>
-  <footer class="text-sm font-light text-gray-500 dark:text-gray-400">
+  <!-- <footer class="text-sm font-light text-gray-500 dark:text-gray-400">
     <div class="mx-auto flex h-14 items-center justify-center gap-2 border-t border-gray-200 dark:border-gray-800">
       <div>
         <span>Copyright &copy; {{ currentYear }}</span>
@@ -57,5 +57,19 @@ const currentYear = ref(dayjs().year())
         <UButton to="https://www.ikxin.com" target="_blank" variant="link" square class="font-light"> ikxin </UButton>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  <ALayoutFooter class="bg-[--color-bg-2] px-2">
+    <div class="w-256 mx-auto flex h-14 max-w-full items-center justify-center whitespace-nowrap">
+      <ASpace>
+        <div>
+          Copyright &copy; {{ currentYear }}
+          <ALink target="_blank" href="https://github.com/ikxin/kms-tools"> KMS Tools </ALink>
+        </div>
+        <div>
+          Code with by
+          <ALink target="_blank" href="https://www.ikxin.com">ikxin</ALink>
+        </div>
+      </ASpace>
+    </div>
+  </ALayoutFooter>
 </template>
