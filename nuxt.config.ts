@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   plugins: ['~/plugins/arco-design'],
-  modules: ['@nuxtjs/eslint-module'],
-  eslint: { lintOnStart: false }
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module'],
+  eslint: {
+    lintOnStart: false
+  },
+  tailwindcss: {
+    viewer: false
+  }
 })
