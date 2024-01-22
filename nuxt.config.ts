@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   plugins: ['~/plugins/arco-design'],
-  modules: ['@nuxt/ui', '@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/eslint-module'],
   eslint: { lintOnStart: false }
 })
