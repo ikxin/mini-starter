@@ -31,7 +31,7 @@ const currentYear = ref(dayjs().year())
     <div class="mx-auto flex h-14 items-center justify-center gap-1 border-t border-gray-200">
       <div>
         <span>Copyright &copy; {{ currentYear }}</span>
-        <ALink target="_blank" href="https://github.com/ikxin/quick-hub">QuickHub</ALink>
+        <ALink target="_blank" href="https://github.com/ikxin/super-starter">Super Starter</ALink>
       </div>
       <div>
         <span>Code with by</span>
